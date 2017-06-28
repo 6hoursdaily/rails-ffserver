@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/server' => 'home#server', as: "server"
   get '/dashboard' => 'home#dashboard', as: "dashboard"
   root 'home#index'
 
