@@ -1,8 +1,6 @@
-.clearfix
-.well
-  .container-fluid
-    - @sources.each do |source|
-      .col-md-4
-        %video{:controls => "", :width => "100%", :autoplay => ""}
-          %source{:src => "#{ENV["CCTV_SERVER"]}/cam#{source}.webm", :type => "video/webm"}
-          Your browser does not support the video tag.
+.container-fluid
+  - @sources.each do |source|
+    .col-md-4
+      %video{:controls => "", :width => "100%", :autoplay => ""}
+        %source{:src => "#{ENV["CCTV_SERVER"]}/cam#{source}.webm", :type => "video/webm"}
+        Your browser does not support the video tag.
