@@ -3,6 +3,6 @@
   .container-fluid
     - @sources.each do |source|
       .col-md-4
-        .videocontent
-          %video.video-js.vjs-default-skin.vjs-16-9{:id => "video#{source}", :controls => "", "data-setup" => '{"autoplay": true}', :height => "240", :preload => "auto", :width => "427"}
-            %source{:src => "#{ENV["CCTV_SERVER"]}/flvstream#{source}.flv", :type => "video/x-flv"}
+        %video{:controls => "", :width => "100%", :autoplay => ""}
+          %source{:src => "#{ENV["CCTV_SERVER"]}/cam#{source}.webm", :type => "video/webm"}
+          Your browser does not support the video tag.
