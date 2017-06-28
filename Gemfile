@@ -18,7 +18,6 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'haml-rails'
 gem 'bootstrap-sass'
-gem 'dotenv-rails'
 # gem 'redis', '~> 3.0'
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -27,6 +26,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'foreman'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
