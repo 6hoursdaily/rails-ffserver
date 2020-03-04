@@ -1,11 +1,10 @@
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
+  "https://github.com/6hoursdaily/rails-ffserver.git"
 end
 
-ruby '2.5.1'
+ruby '2.6.2'
 
 gem 'rails', '~> 5.2.2'
 gem 'sqlite3'
