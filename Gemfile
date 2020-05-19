@@ -6,7 +6,7 @@ end
 
 ruby '2.6.2'
 
-gem 'rails', '~> 5.2.2'
+gem 'rails', '~> 5.2.4'
 gem 'sqlite3'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
